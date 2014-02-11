@@ -2,7 +2,7 @@ class { 'apt': }
 
 apt::ppa { 'ppa:groovy-dev/grails': }
 
-package { ['grails-2.2.0', 'grails-2.1.3']:
+package { 'grails-2.2.0':
   ensure  => installed,
   require => Apt::Ppa['ppa:groovy-dev/grails'],
 }
